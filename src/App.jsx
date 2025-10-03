@@ -1,12 +1,20 @@
 import './App.css'
-import Navbar from './Navbar'
+import Banner from './components/banner/Banner'
+import InProgress from './components/banner/InProgress'
+import Resolved from './components/banner/Resolved'
+import Container from './components/Container'
+import Flex from './components/Flex'
+import Navbar from './components/Navbar'
 
 function App() {
-  
+
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <Container>
+        <Banner/>
+      </Container>
     </>
   )
 }
