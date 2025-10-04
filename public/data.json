@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Login issue",
+    "description": "Customer unable to log into the system with correct credentials.",
+    "customer": "John Doe",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-20"
+  },
+  {
+    "id": 1002,
+    "title": "Payment gateway error",
+    "description": "Payment is failing intermittently for credit card transactions.",
+    "customer": "Alice Smith",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-21"
+  },
+  {
+    "id": 1003,
+    "title": "Page not loading",
+    "description": "Dashboard page is taking too long to load for some users.",
+    "customer": "Michael Johnson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-22"
+  },
+  {
+    "id": 1004,
+    "title": "Feature request: Dark mode",
+    "description": "Customer requested a dark mode option for the web app.",
+    "customer": "Sophia Brown",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-22"
+  },
+  {
+    "id": 1005,
+    "title": "Mobile app crash",
+    "description": "App crashes when navigating to the settings screen.",
+    "customer": "Daniel Lee",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-23"
+  },
+  {
+    "id": 1006,
+    "title": "Email notifications not received",
+    "description": "Some users are not getting password reset emails.",
+    "customer": "Emma Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-23"
+  },
+  {
+    "id": 1007,
+    "title": "Incorrect invoice amount",
+    "description": "Customer was billed twice for the same service.",
+    "customer": "Liam Martinez",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-24"
+  },
+  {
+    "id": 1008,
+    "title": "Broken image links",
+    "description": "Product images are not loading on the shop page.",
+    "customer": "Olivia Anderson",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-24"
+  },
+  {
+    "id": 1009,
+    "title": "Slow API response",
+    "description": "Reports API taking more than 10 seconds to respond.",
+    "customer": "William Thomas",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-25"
+  },
+  {
+    "id": 1010,
+    "title": "Account locked",
+    "description": "User account locked after multiple failed login attempts.",
+    "customer": "Ava Taylor",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-26"
+  }
+]
