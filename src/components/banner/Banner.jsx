@@ -3,12 +3,12 @@ import Flex from '../Flex'
 import InProgress from './InProgress'
 import Resolved from './Resolved'
 
-const Banner = () => {
+const Banner = ({selectedCards}) => {
     return (
         <>
             <div className="">
                 <Flex className={'mt-5 justify-between'}>
-                    <InProgress />
+                    <InProgress selectedCards={selectedCards} />
                     <Resolved />
                 </Flex>
             </div>

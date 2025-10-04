@@ -1,10 +1,15 @@
 import React from 'react'
+import Selected from './selectedTicketCard/Selected'
 
-const TaskStatusBar = () => {
+const TaskStatusBar = ({selectedCards}) => {
+    // console.log(selectedCards)
   return (
     <div>
       <h2 className='text-xl'>Task Status</h2>
-      <p>Select a ticket to add to Task Status</p>
+      
+      {
+        selectedCards.map(card => <Selected key={card.id} card={card}></Selected>) 
+      }
     </div>
   )
 }

@@ -1,20 +1,24 @@
 import React, { use } from 'react'
 import { CiCalendar } from "react-icons/ci";
-const LeftCard = ({ fetchDataPromise }) => {
+const LeftCard = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
 
     const initialData = use(fetchDataPromise)
     // console.log(initialData);
+
+    const handleSelectedCard = (itemCardData) => {
+        setSelectedCards([...selectedCards, itemCardData])
+    }
     return (
         <>
             
             <div>
                 <h2 className='text-2xl font-bold'>Customer Tickets</h2>
-                <div className="grid grid-cols-2 gap-[12px] mt-3">
+                <div className="grid grid-cols-2 gap-[15px] mt-3">
 
                     {
                         initialData.map((item, index) => {
                             // console.log(item)
-                            return <div key={index} className='shadow-md rounded-md cursor-pointer bg-slate-100 p-5 py-10'>
+                            return <div onClick={() =>handleSelectedCard(item)} key={index} className='shadow-md rounded-md cursor-pointer bg-white p-4 w-[500px] h-[148px]'>
                                 <div className="flex items-center justify-between">
                                     <div className="">
                                         <h2>{item.title}</h2>

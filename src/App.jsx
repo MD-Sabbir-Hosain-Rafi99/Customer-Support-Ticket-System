@@ -14,21 +14,23 @@ const fetchData = async () => {
   return res.json()
 }
 
+const fetchDataPromise = fetchData();
+
 function App() {
 
-  const fetchDataPromise = fetchData();
+  
 
   // Ticket card selected
   const [selectedCards, setSelectedCards] = useState([])
-
+  // console.log(selectedCards)
 
   return (
     <>
       <Navbar />
       <Container>
-        <Banner/>
+        <Banner selectedCards={selectedCards}/>
         <Suspense fallback={'Loading...'}>
-          <CustomerTickets fetchDataPromise={fetchDataPromise}/>
+          <CustomerTickets selectedCards={selectedCards} setSelectedCards={setSelectedCards} fetchDataPromise={fetchDataPromise}/>
         </Suspense>
       </Container>
     </>

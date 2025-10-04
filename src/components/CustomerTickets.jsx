@@ -1,15 +1,16 @@
 
 import LeftCard from './LeftCard';
 import TaskStatusBar from './TaskStatusBar';
-const CustomerTickets = ({ fetchDataPromise }) => {
+
+const CustomerTickets = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
 
     
-    
+    // console.log(selectedCards)
 
     return (
-        <div className='flex items-start gap-x-8 mt-10'>
-            <LeftCard fetchDataPromise={fetchDataPromise}/>
-            <TaskStatusBar/>
+        <div className='flex items-start  gap-x-8 mt-10'>
+            <LeftCard selectedCards={selectedCards} setSelectedCards={setSelectedCards} fetchDataPromise={fetchDataPromise}/>
+            <TaskStatusBar selectedCards={selectedCards}/>
         </div>
     )
 }

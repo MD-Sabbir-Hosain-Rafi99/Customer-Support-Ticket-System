@@ -3,17 +3,17 @@ import Container from '../Container'
 import Flex from '../Flex'
 import bg1 from '../../assets/bg1.png'
 
-const InProgress = () => {
+const InProgress = ({selectedCards}) => {
     return (
         <>
-            <div class="w-[608px] h-[250px] rounded-2xl relative">
-                <div class="absolute inset-0">
-                    <img src={bg1} class="w-full h-full rounded-2xl object-cover" alt="pattern" />
+            <div className="w-[608px] h-[250px] rounded-2xl relative">
+                <div className="absolute inset-0">
+                    <img src={bg1} className="w-full h-full rounded-2xl object-cover" alt="pattern" />
                 </div>
 
-                <div class="relative z-10 flex flex-col items-center justify-center h-full text-white">
-                    <h2 class="text-xl font-semibold">In-Progress</h2>
-                    <p class="text-5xl font-medium">0</p>
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+                    <h2 className="text-xl font-semibold">In-Progress</h2>
+                    <p className="text-5xl font-medium">{selectedCards.length}</p>
                 </div>
             </div>
 
