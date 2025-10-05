@@ -14,13 +14,13 @@ const LeftCard = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
         <>
             
             <div className='order-2 md:order-1'>
-                <h2 className='text-center md:text-start text-2xl font-bold'>Customer Tickets</h2>
+                <h2 className='text-center md:text-start text-2xl font-bold text-black'>Customer Tickets</h2>
                 <div className="grid md:grid-cols-2 gap-[15px] mt-3">
 
                     {
                         initialData.map((item, index) => {
                             // console.log(item)
-                            return <div onClick={() =>handleSelectedCard(item)} key={index} className='shadow-md rounded-md cursor-pointer bg-white p-4 md:w-[500px] h-[148px]'>
+                            return <div onClick={() =>handleSelectedCard(item)} key={index} className='shadow-md rounded-md cursor-pointer bg-white p-4 md:w-[500px] h-[148px] text-black'>
                                 <div className="flex items-center justify-between">
                                     <div className="">
                                         <h2>{item.title}</h2>
