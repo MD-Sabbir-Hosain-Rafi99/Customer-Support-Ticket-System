@@ -5,7 +5,7 @@ import ResolvedRightSideCard from './ResolvedRightSideCard'
 const TaskStatusBar = ({ selectedCards, completeInprogress }) => {
     // console.log(selectedCards)
     return (
-        <div>
+        <div className='order-1 md:order-2'> 
             <h2 className='text-2xl font-semibold'>Task Status</h2>
 
             <div className="">

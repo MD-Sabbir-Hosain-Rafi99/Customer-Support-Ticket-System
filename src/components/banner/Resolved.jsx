@@ -5,7 +5,7 @@ import bg2 from '../../assets/bg2.png'
 const Resolved = ({resolvedNum}) => {
     return (
         <>
-            <div className="w-[608px] h-[250px] relative">
+            <div className="w-[408px] md:w-[608px] h-[250px] relative">
                 <div className="absolute inset-0">
                     <img src={bg2} className="w-full h-full rounded-2xl object-cover" alt="pattern" />
                 </div>

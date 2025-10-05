@@ -8,7 +8,7 @@ const CustomerTickets = ({ fetchDataPromise, selectedCards, setSelectedCards, co
     // console.log(selectedCards)
 
     return (
-        <div className='flex items-start gap-x-8 mt-10'>
+        <div className='flex flex-col md:flex-row items-start gap-x-8 mt-10'>
             <LeftCard selectedCards={selectedCards} setSelectedCards={setSelectedCards} fetchDataPromise={fetchDataPromise}/>
             <TaskStatusBar completeInprogress={completeInprogress} selectedCards={selectedCards}/>
         </div>
