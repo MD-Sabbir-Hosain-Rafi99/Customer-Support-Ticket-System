@@ -2,15 +2,15 @@
 import LeftCard from './LeftCard';
 import TaskStatusBar from './TaskStatusBar';
 
-const CustomerTickets = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
+const CustomerTickets = ({ fetchDataPromise, selectedCards, setSelectedCards, completeInprogress }) => {
 
     
     // console.log(selectedCards)
 
     return (
-        <div className='flex items-start  gap-x-8 mt-10'>
+        <div className='flex items-start gap-x-8 mt-10'>
             <LeftCard selectedCards={selectedCards} setSelectedCards={setSelectedCards} fetchDataPromise={fetchDataPromise}/>
-            <TaskStatusBar selectedCards={selectedCards}/>
+            <TaskStatusBar completeInprogress={completeInprogress} selectedCards={selectedCards}/>
         </div>
     )
 }

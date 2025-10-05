@@ -1,5 +1,6 @@
 import React, { use } from 'react'
 import { CiCalendar } from "react-icons/ci";
+import { ToastContainer, toast } from 'react-toastify';
 const LeftCard = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
 
     const initialData = use(fetchDataPromise)
@@ -7,6 +8,7 @@ const LeftCard = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
 
     const handleSelectedCard = (itemCardData) => {
         setSelectedCards([...selectedCards, itemCardData])
+        toast("In-Progress!");
     }
     return (
         <>
@@ -52,12 +54,14 @@ const LeftCard = ({ fetchDataPromise, selectedCards, setSelectedCards }) => {
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         })
                     }
 
                 </div>
             </div>
+            <ToastContainer/>
         </>
     )
 }
