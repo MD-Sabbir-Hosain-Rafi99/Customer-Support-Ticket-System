@@ -12,7 +12,7 @@ const Selected = ({ card, completeInprogress }) => {
         // <p>Select a ticket to add to Task Status</p>
         <>
             <div className="p-4 w-[230px] bg-white rounded-md mt-4">
-                <h3 className='pb-2'>{card.title}</h3>
+                <h3 className='pb-2 text-black'>{card.title}</h3>
                 <button onClick={handleComplete} className="btn bg-[#02A53B] w-full text-white">Complete</button>
             </div>
 

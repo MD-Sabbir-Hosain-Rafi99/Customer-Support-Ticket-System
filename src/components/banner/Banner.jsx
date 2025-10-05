@@ -7,7 +7,7 @@ const Banner = ({selectedCards, resolvedNum}) => {
     return (
         <>
             <div className="">
-                <Flex className={'mt-5 justify-between'}>
+                <Flex className={'mt-5 justify-between gap-x-8'}>
                     <InProgress selectedCards={selectedCards} />
                     <Resolved resolvedNum={resolvedNum} />
                 </Flex>
